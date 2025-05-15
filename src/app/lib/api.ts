@@ -1,9 +1,6 @@
 import { Recipe, RecipeDetail } from 'app/types/types';
 const API_KEY = process.env.SPOONACULAR_API_KEY;
 export async function fetchRecipeById(id: string): Promise<RecipeDetail> {
-  if (!API_KEY) {
-    throw new Error('Missing Spoonacular API key');
-  }
   const res = await fetch(
     `https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}`,
     {
@@ -19,9 +16,6 @@ export async function getRecipes(
 ): Promise<Recipe[]> {
   const get = (key: string) =>
     typeof searchParams[key] === 'string' ? (searchParams[key] as string) : '';
-  if (!API_KEY) {
-    throw new Error('Missing Spoonacular API key');
-  }
   const query = get('query');
   const cuisine = get('cuisine');
   const maxReadyTime = get('maxReadyTime');
