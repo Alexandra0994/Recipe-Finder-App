@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import { getRecipes } from 'app/lib/api';
 import { Recipe } from '@/types/types';
-import { Suspense } from 'react';
-import Loading from 'app/loading';
 export default async function RecipesPage() {
   const recipes = await getRecipes({
     query: '',
@@ -10,7 +8,6 @@ export default async function RecipesPage() {
     maxReadyTime: '',
   });
   return (
-    <Suspense fallback={<Loading />}>
       <div className="p-6">
         <h1 className="text-3xl font-bold mb-4">Recipes</h1>
         {recipes.length === 0 ? (
@@ -32,6 +29,5 @@ export default async function RecipesPage() {
           </div>
         )}
       </div>
-    </Suspense>
   );
 }
