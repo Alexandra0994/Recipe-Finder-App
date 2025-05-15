@@ -1,7 +1,7 @@
 import { Recipe, RecipeDetail } from 'app/types/types';
 const API_KEY = process.env.SPOONACULAR_API_KEY;
 export async function fetchRecipeById(id: string): Promise<RecipeDetail> {
-    if (!API_KEY) {
+  if (!API_KEY) {
     throw new Error('Missing Spoonacular API key');
   }
   const res = await fetch(
