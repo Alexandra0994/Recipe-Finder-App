@@ -4,7 +4,6 @@ A simple and elegant recipe search application built with **Next.js 14**, **Type
 
 🔗 **Live Demo**: [recipe-finder-app-bay.vercel.app](https://recipe-finder-app-bay.vercel.app)
 
-
 ## ✨ Features
 
 - 🔍 Search for recipes by **ingredient**, **cuisine**, or **prep time**
@@ -16,8 +15,8 @@ A simple and elegant recipe search application built with **Next.js 14**, **Type
 ## 🚀 Tech Stack
 
 # 🥄 Spoonacular API Key
-SPOONACULAR_API_KEY=your_api_key_here
 
+SPOONACULAR_API_KEY=your_api_key_here
 
 - [Next.js 14+](https://nextjs.org)
 - [React 19](https://react.dev)
