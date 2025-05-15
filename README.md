@@ -2,8 +2,6 @@
 
 A simple and elegant recipe search application built with **Next.js 14**, **TypeScript**, and **Tailwind CSS** using the **Spoonacular API**.
 
-🔗 **Live Demo**: [recipe-finder-app-bay.vercel.app](https://recipe-finder-app-bay.vercel.app)
-
 ## ✨ Features
 
 - 🔍 Search for recipes by **ingredient**, **cuisine**, or **prep time**
@@ -31,3 +29,5 @@ SPOONACULAR_API_KEY=your_api_key_here
 ### 1. Clone the repo
 
 git clone https://github.com/your-username/recipe-finder-app.git
+
+npm run dev
